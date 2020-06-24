@@ -1,0 +1,36 @@
+{
+  "name": "@shopify/greeting",
+  "version": "0.0.1",
+  "license": "MIT",
+  "description": "Generate a random greeting",
+  "main": "dist/src/index.js",
+  "types": "dist/src/index.d.ts",
+  "scripts": {
+    "build": "tsc --p tsconfig.json"
+  },
+  "publishConfig": {
+    "access": "public",
+    "@shopify:registry": "https://registry.npmjs.org"
+  },
+  "author": "Shopify Inc.",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Shopify/quilt.git",
+    "directory": "packages/greeting"
+  },
+  "bugs": {
+    "url": "https://github.com/Shopify/quilt/issues"
+  },
+  "homepage": "https://github.com/Shopify/quilt/blob/master/packages/greeting/README.md",
+  "devDependencies": {
+    "@shopify/jest-dom-mocks": "^2.9.1"
+  },
+  "sideEffects": false,
+  "dependencies": {
+    "tslib": "^1.9.3"
+  },
+  "files": [
+    "dist/*",
+    "!tsconfig.tsbuildinfo"
+  ]
+}
